@@ -1,6 +1,7 @@
 FROM chatwoot/chatwoot:latest
 
-RUN apk add --no-cache multirun postgresql-client
+RUN apk add --no-cache multirun postgresql-client nodejs npm \
+ && npm i -g pnpm@9
 
 WORKDIR /app
 
