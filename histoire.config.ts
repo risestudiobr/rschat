@@ -4,6 +4,7 @@ import { HstVue } from '@histoire/plugin-vue';
 export default defineConfig({
   setupFile: './histoire.setup.ts',
   plugins: [HstVue()],
+  collectMaxThreads: 4,
   vite: {
     server: {
       port: 6179,
@@ -14,9 +15,9 @@ export default defineConfig({
     darkClass: 'dark',
     title: '@chatwoot/design',
     logo: {
-      square: './design-system/images/logo-thumbnail.svg',
+      square: './design-system/images/logo.png',
       light: './design-system/images/logo.png',
-      dark: './design-system/images/logo-dark.png',
+      dark: './design-system/images/logo.png',
     },
   },
   defaultStoryProps: {
